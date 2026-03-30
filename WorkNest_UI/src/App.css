@@ -1,0 +1,123 @@
+/* app.css */
+
+/* Tailwind base setup */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Styles ===== */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+button {
+  @apply bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300;
+}
+
+input, select, textarea {
+  @apply border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 w-full;
+}
+
+h1, h2, h3 {
+  @apply font-bold text-gray-900;
+}
+
+section {
+  @apply my-6 p-4 bg-white rounded shadow-md;
+}
+
+ul li {
+  @apply border-b border-gray-200 py-2;
+}
+
+/* ===== Navigation / Public Pages ===== */
+nav {
+  @apply flex justify-between items-center p-4 bg-white shadow-md sticky top-0 z-10;
+}
+
+nav h2 {
+  @apply text-2xl font-bold text-blue-600;
+}
+
+nav a {
+  @apply mx-2 text-gray-700 hover:text-blue-600 transition;
+}
+
+section h1 {
+  @apply text-4xl font-extrabold my-2;
+}
+
+section p {
+  @apply text-lg my-2;
+}
+
+section button {
+  @apply mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700;
+}
+
+.features div {
+  @apply border border-gray-200 p-4 rounded hover:shadow-lg transition cursor-pointer;
+}
+
+/* ===== Forms ===== */
+form {
+  @apply max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg space-y-4;
+}
+
+form input, form select, form textarea {
+  @apply w-full border border-gray-300 rounded px-3 py-2 focus:ring-2 focus:ring-blue-400 focus:outline-none;
+}
+
+form button {
+  @apply w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300;
+}
+
+/* ===== Dashboards ===== */
+.dashboard {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6;
+}
+
+.dashboard section {
+  @apply p-4 bg-white rounded-lg shadow hover:shadow-lg transition;
+}
+
+.dashboard h2 {
+  @apply text-xl font-bold mb-2;
+}
+
+.dashboard ul {
+  @apply space-y-2;
+}
+
+.dashboard ul li {
+  @apply flex justify-between items-center border-b border-gray-200 py-2;
+}
+
+.dashboard button {
+  @apply bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700 transition;
+}
+
+/* ===== Task Board / Kanban ===== */
+.kanban-board {
+  @apply flex gap-6 p-4 overflow-x-auto;
+}
+
+.kanban-column {
+  @apply flex flex-col bg-gray-100 rounded-lg p-4 min-w-[250px];
+}
+
+.kanban-column h2 {
+  @apply font-bold text-lg mb-2 text-center;
+}
+
+.kanban-task {
+  @apply bg-white rounded-lg p-3 mb-3 shadow hover:shadow-md cursor-pointer transition;
+}
+
+.kanban-task p {
+  @apply text-sm text-gray-700;
+}
+
+.kanban-task .priority {
+  @apply font-bold text-xs mt-1;
+}

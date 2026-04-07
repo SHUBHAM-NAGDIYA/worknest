@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY
 # -------------------------------
 # Use environment variable (Render)
-SECRET_KEY = os.environ.get('SECRET_KEY', 'fallback-secret-key')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = False
 

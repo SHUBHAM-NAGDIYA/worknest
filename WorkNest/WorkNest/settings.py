@@ -22,7 +22,6 @@ ALLOWED_HOSTS = [
 # APPLICATIONS
 # -------------------------------
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -64,19 +63,18 @@ DATABASES = {
     )
 }
 
-
+ss
 # -------------------------------
 # CORS / CSRF
 # -------------------------------
 CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",
+    "https://worknest-k414.onrender.com",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
-    "http://localhost:5174",
+    "https://worknest-k414.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
